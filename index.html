@@ -5,6 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>仲信融資｜資金規劃資訊服務</title>
 <style>
+ .line-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  background:linear-gradient(90deg,#06c755,#00b900);
+  color:white;
+  padding:18px 38px;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 0 0 0 rgba(6,199,85,.65), 0 12px 28px rgba(0,0,0,.28);
+  transition:0.25s;
+  animation:pulseLine 1.8s infinite;
+}
+
+.line-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  background:linear-gradient(90deg,#06c755,#00b900);
+  color:white;
+  padding:18px 38px;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 0 0 0 rgba(6,199,85,.65), 0 12px 28px rgba(0,0,0,.28);
+  transition:0.25s;
+  animation:pulseLine 1.8s infinite;
+}
+
+.line-btn:hover{
+  transform:scale(1.06);
+}
+
+.line-icon{
+  width:30px;
+  height:30px;
+}
+
+@keyframes pulseLine{
+  0%{
+    box-shadow:0 0 0 0 rgba(6,199,85,.65), 0 12px 28px rgba(0,0,0,.28);
+  }
+  70%{
+    box-shadow:0 0 0 14px rgba(6,199,85,0), 0 12px 28px rgba(0,0,0,.28);
+  }
+  100%{
+    box-shadow:0 0 0 0 rgba(6,199,85,0), 0 12px 28px rgba(0,0,0,.28);
+  }
+}
+
+@media(max-width:600px){
+  .line-btn{
+    width:90%;
+    font-size:18px;
+    padding:17px 20px;
+  }
+}
 body{
   margin:0;
   font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
@@ -200,10 +262,10 @@ footer{
     有資金規劃、週轉需求或特殊情況想了解，<br>
     可以先提供基本情況，由專人協助整理方向。
   </p>
-  <a class="btn" href="https://line.me/R/ti/p/~cindy00723" target="_blank">
-  點我加入LINE了解詳情
+ <a href="https://line.me/R/ti/p/~cindy00723" class="line-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" class="line-icon">
+  點我加入LINE諮詢
 </a>
-
   <div class="notice">
     【重要提醒】本頁提供一般資金資訊整理與流程說明，非銀行或放款機構，不涉及放款行為、
     保證核准、保證額度或利率承諾。實際條件、審核結果與相關規定，仍依合作機構或金融機構審核為準。
